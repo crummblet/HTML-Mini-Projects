@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Press the Red Button - Alternate Ending</title>
+  </head>
+  <body>
+    <h1>Press the Red Button - Alternate Ending</h1>
+    <p>
+      You run over to the red button and slam it down. Instantly, everything
+      goes black. You wake up back to the most recent place you could remember.
+      Everything's normal. But you have no idea how you ended up in that room.
+      No explanation. You run over to the clock and check the time. 3:46 AM. You
+      remember that you fell asleep at around 10:00 AM. Could it have just been
+      a dream? Or is something else happening behind the scenes?
+    </p>
+    <p>THE END</p>
+    <a href="the-red-button.html">Try again?</a>
+  </body>
+</html>

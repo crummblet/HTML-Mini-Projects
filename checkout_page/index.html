@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+  </head>
+
+  <body>
+    <h1>Checkout</h1>
+    <section>
+      <h2>Your Cart</h2>
+      <img src="https://picsum.photos/200/300" alt="Lorem ipsum" />
+    </section>
+    <section>
+      <h2>Payment Information</h2>
+      <form>
+        <label for="card-number"
+          ><span aria-hidden="true">*</span>Card Number</label
+        >
+        <input
+          id="card-number"
+          name="card-number"
+          type="text"
+          required
+          aria-describedby="card-number-help"
+        />
+        <p id="card-number-help">Lorem ipsum (Card number help placeholder)</p>
+        <br />
+        <label for="card-name"
+          ><span aria-hidden="true">*</span>Card Name</label
+        >
+        <input id="card-name" name="card-name" type="text" required />
+      </form>
+    </section>
+  </body>
+</html>

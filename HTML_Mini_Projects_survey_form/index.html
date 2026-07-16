@@ -10,37 +10,57 @@
       *Disclaimer: Form does not actually submit and is not sent to any servers.
       This is a page built for programming practice.*
     </p>
+
     <h1 id="title">HTML Mini Projects Survey Form</h1>
+
     <p id="description">
       Thank you for taking the time to help me improve the HTML Mini Projects
       collection.
     </p>
+
     <form id="survey-form">
-      <label id="name-label">*Full Name:</label>
-      <input required type="text" id="name" placeholder="ex. John Doe" />
+      <label id="name-label" for="name">*Full Name:</label>
+      <input
+        required
+        type="text"
+        id="name"
+        name="name"
+        placeholder="ex. John Doe"
+      />
       <br />
 
-      <label id="email-label">*Email:</label>
+      <label id="email-label" for="email">*Email:</label>
       <input
         required
         id="email"
+        name="email"
         type="email"
         placeholder="ex. fake@email.com"
       />
       <br />
 
-      <label id="number-label">Age:</label>
-      <input id="number" type="number" min="1" max="100" placeholder="ex. 30" />
+      <label id="number-label" for="number">Age:</label>
+      <input
+        id="number"
+        name="age"
+        type="number"
+        min="1"
+        max="100"
+        placeholder="ex. 30"
+      />
+
       <br />
       <br />
 
-      <label for="dropdown"
-        >What option best describes your current experience with HTML and
-        programming in general?</label
-      >
+      <label for="dropdown">
+        What option best describes your current experience with HTML and
+        programming in general?
+      </label>
+
       <br />
       <br />
-      <select id="dropdown" required>
+
+      <select id="dropdown" name="experience" required>
         <option value="Inexperienced">Inexperienced</option>
         <option value="Learning" selected>Learning</option>
         <option value="Part time programming job">
@@ -50,50 +70,68 @@
           Full time programming job
         </option>
       </select>
-      <br />
-      <br />
-
-      <label
-        >Would you return to the HTML Mini Projects site to check for new
-        projects?</label
-      >
-      <br />
-      <br />
-
-      <input type="radio" value="definitely" name="choice" />
-      <label>Definitely</label>
-
-      <input type="radio" value="maybe" name="choice" />
-      <label>Maybe</label>
-      <input type="radio" value="not sure" name="choice" />
-      <label>Not sure</label>
 
       <br />
       <br />
-      <label
-        >What are your favorite part(s) of HTML Mini Projects? (Check all that
-        apply)</label
-      >
+
+      <p>
+        Would you return to the HTML Mini Projects site to check for new
+        projects?
+      </p>
+
+      <input id="definitely" type="radio" value="definitely" name="choice" />
+      <label for="definitely">Definitely</label>
+
+      <input id="maybe" type="radio" value="maybe" name="choice" />
+      <label for="maybe">Maybe</label>
+
+      <input id="not-sure" type="radio" value="not sure" name="choice" />
+      <label for="not-sure">Not Sure</label>
+
       <br />
       <br />
-      <input type="checkbox" value="projects" name="projects" />
-      <label>Projects</label>
-      <input type="checkbox" value="authenticity" name="authenticity" />
-      <label>Authenticity</label>
+
+      <p>
+        What are your favorite part(s) of HTML Mini Projects? (Check all that
+        apply)
+      </p>
+
+      <input id="projects" type="checkbox" value="projects" name="favorites" />
+      <label for="projects">Projects</label>
+
       <input
+        id="authenticity"
+        type="checkbox"
+        value="authenticity"
+        name="favorites"
+      />
+      <label for="authenticity">Authenticity</label>
+
+      <input
+        id="bugs"
         type="checkbox"
         value="Looking for and fixing bugs"
-        name="Looking for and fixing bugs"
+        name="favorites"
       />
-      <label>Looking for and fixing bugs</label>
+      <label for="bugs">Looking for and fixing bugs</label>
+
       <br />
       <br />
-      <label>Any comments or suggestions?</label>
+
+      <label for="comments">Any comments or suggestions?</label>
+
       <br />
       <br />
-      <textarea placeholder="Enter your comment here..."></textarea>
+
+      <textarea
+        id="comments"
+        name="comments"
+        placeholder="Enter your comment here..."
+      ></textarea>
+
       <br />
       <br />
+
       <input id="submit" type="submit" />
     </form>
   </body>
